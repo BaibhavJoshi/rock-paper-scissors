@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --blue:#264653;
+    --green:#2a9d8f;
+    --yellow:#e9c46a;
+    --orange:#f4a261;
+    --red:#e76f51;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container{
+    width:100vw;
+    height:100vh;
+    background: radial-gradient(100% 100% at 50% 50%, var(--green), var(--blue));
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.score-board{
+    margin-top:2em;
+    padding:1em;
+    width:50%;
+    border-radius:5px;
+    border:2px solid white;
+    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.game-title{
+    font-size: x-large;
+    line-height:2em;
+    color:white;
+}
+
+.score-box{
+    font-size:xx-large;
+    background-color:white;
+    color:var(--blue);
+    padding:0.4em  1em;
+    border-radius:5px;
+    margin-right:0.5em;
+    line-height:1.8em;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.play-screen div{
+    padding:0 2em;
+    cursor:pointer;
+}
+
+.play-screen div:hover{
+    transform:scale(1.1);
+    transition-duration:0.3s;
+}
+
+.play-screen div:active{
+    transform:translateY(4px)
+}
+
+.play-screen{
+    width:40%;
+    margin-top:2em;
+    padding:2em;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    background-image:url("../assets/triangle.png");
+    background-repeat:no-repeat;
+    background-position:center; 
+}
+
+.result-screen h1{
+    line-height:2em;
+    color:white;
+}
+
+
+.result-screen{
+    width:60%;
+    margin-top:3em;
+    padding:2em;
+    
+    justify-content:space-between;
+    align-items:center;
+
+    display:none;
+}
+
+.game-stuff{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.game-result-text{
+    font-size:4em;
+}
+
+.restart-btn{
+    padding:0.8em 2em;
+    font-size:x-large;
+    color:var(--blue);
+    font-weight:bolder;
+    border:2px solid black;
+    border-radius:5px;
+    box-shadow: 0px 10px 20px 1px rgb(0, 0, 0);
+}
+
+.restart-btn:hover{
+    transform: scale(1.1);
+    transition-duration:0.3s;
+}
+
+.restart-btn:active{
+    background-color:white;
+    color:var(--black);
+    transform:translateY(4px)
+}
+
+
+@media(min-height: 900px){
+    .play-screen, .result-screen{
+        margin-top:5em;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="score-board">
+            <div class="game-title">
+                <h1>ROCK</h1>
+                <h1>PAPER</h1>
+                <h1>SCISSORS</h1>
+            </div>
+            <div class="score-box" id="score-box">
+                <p>SCORE</p>
+                <h1 id="score">0</h1>
+            </div>
+        </div>
+        <div class="play-screen" id="play-screen">
+            <div class="paper">
+                <img src="./assets/Paper.png" alt="Paper" onclick="handleUserChoice('paper')">
+            </div>
+            <div class="scissors">
+                <img src="./assets/Scissors.png" alt="Scissors" onclick="handleUserChoice('scissors')">
+            </div>
+            <div class="rock">
+                <img src="./assets/Rock.png" alt="Rock" onclick="handleUserChoice('rock')">
+            </div>
+        </div>
+
+        <div class="result-screen" id="result-screen">
+            <div class="user-stuff">
+                <h1> YOU PICKED </h1>
+                <div class="user-choice-container">
+                    <img id="user-choice-image" src="./assets/Paper.png" alt="User Choice">
+                </div>
+            </div>
+            <div class="game-stuff">
+                <h1 class="game-result-text" id="game-result-text">YOU WIN!</h1>
+                <button class="restart-btn" id="restart-btn" onclick="handleRestartButton()">PLAY AGAIN</button>
+            </div>
+            <div class="bot-stuff">
+                <h1> BOT PICKED </h1>
+                <div class="bot-choice-container">
+                    <img id="bot-choice-image" src="./assets/Rock.png" alt="Bot Choice">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html> 
