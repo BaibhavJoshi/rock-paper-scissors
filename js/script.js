@@ -59,25 +59,25 @@ function handleUserChoice(choice){
     // Set and show the result screen
     switch(userChoice){
         case "rock":
-            userImage.src="../assets/Rock.png";
+            userImage.src="./assets/Rock.png";
             break;
         case "paper":
-            userImage.src="../assets/Paper.png";
+            userImage.src="./assets/Paper.png";
             break;
         case "scissors":
-            userImage.src = "../assets/Scissors.png";
+            userImage.src = "./assets/Scissors.png";
             break; 
     }
 
     switch(botChoice){
         case "rock":
-            botImage.src="../assets/Rock.png";
+            botImage.src="./assets/Rock.png";
             break;
         case "paper":
-            botImage.src="../assets/Paper.png";
+            botImage.src="./assets/Paper.png";
             break;
         case "scissors":
-            botImage.src = "../assets/Scissors.png";
+            botImage.src = "./assets/Scissors.png";
             break; 
     }
 
